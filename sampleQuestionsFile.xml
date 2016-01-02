@@ -1,0 +1,14 @@
+<Topic name="A nice name">
+	<Question>
+		<Factor value="a"/>
+		<Operator value="+"/> 
+		<Factor value="b"/>
+		<Operator value="="/> 
+		<Factor value="c"/>
+		
+		<IncorrectAnswer value="a+a=c">
+		<IncorrectAnswer value="b+b=c">
+		<IncorrectAnswer value="a+b=a">
+		<CorrectAnswer value="a+b=c">
+	</Question>
+</Topic>
