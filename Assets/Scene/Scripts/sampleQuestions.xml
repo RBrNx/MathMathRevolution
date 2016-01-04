@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Topic name="A nice name">
-	<Question value="Blah blah blah a question is here">
-		<IncorrectAnswer value="a+a=c"/>
-		<IncorrectAnswer value="b+b=c"/>
-		<IncorrectAnswer value="a+b=a"/>
-		<CorrectAnswer value="a+b=c"/>
+<Topic name="Topic 1 - Easy">
+	<Question value="Horizontal Lines have a Gradient of _ ?">
+		<IncorrectAnswer value="1"/>
+    <CorrectAnswer value="0"/>
+		<IncorrectAnswer value="2"/>
+    <IncorrectAnswer value="10"/>
 	</Question>
+
+  <Question value="y = 5x + 7, what is the Gradient? What is the Y-Intercept?">
+    <IncorrectAnswer value="0"/>
+    <CorrectAnswer value="5"/>
+    <IncorrectAnswer value="Y"/>
+    <CorrectAnswer value="7"/>
+  </Question>
 </Topic>
