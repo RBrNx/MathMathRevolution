@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Topic name="Topic 1">
-	<Question>
-		<Factor value="a"/>
-		<Operator value="+"/> 
-		<Factor value="b"/>
-		<Operator value="="/> 
-		<Factor value="c"/>
+<Topic name="A nice name">
+	<Question value="Blah blah blah a question is here">
 		<IncorrectAnswer value="a+a=c"/>
 		<IncorrectAnswer value="b+b=c"/>
 		<IncorrectAnswer value="a+b=a"/>
