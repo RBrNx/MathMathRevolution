@@ -12,10 +12,12 @@ public class ProjectorScreen : MonoBehaviour {
     GameObject gObj;
     TextMesh question;
     TextMesh[] answers;
+		bool[] answerAdded = { false, false, false, false };
 
     // Use this for initialization
     void Start () {
-		questions = Question.loadQuestions(questionsFile.text);
+				answers = new TextMesh[4];
+				questions = Question.loadQuestions(questionsFile.text);
         gObj = GameObject.Find("Question");
         question = gObj.GetComponent<TextMesh>();
 
@@ -38,7 +40,7 @@ public class ProjectorScreen : MonoBehaviour {
         if (Input.GetKeyUp("space"))
         {
             questionNumber++;
-            questionChange = true;
+						ChangeQuestion();
         }
 
         if (questionChange)
@@ -48,25 +50,36 @@ public class ProjectorScreen : MonoBehaviour {
             question.text = questions[chosenTopic][questionNumber].question;
             int correctFilled = 0, incorrectFilled = 0;
 
-            while (correctFilled != correctCount && incorrectFilled != incorrectCount)
+            while (correctFilled != correctCount || incorrectFilled != incorrectCount)
             {
-                int random = Random.Range(0, 3);
-                if(answers[random] == null)
+                int random = Random.Range(0, 4);
+                if(!answerAdded[random])
                 {
                     if(correctFilled != correctCount)
                     {
                         answers[random].text = questions[chosenTopic][questionNumber].correctAnswers[correctFilled];
                         correctFilled++;
+												answerAdded[random] = true;
                     }
                     else if (incorrectFilled != incorrectCount)
                     {
-                        answers[random].text = questions[chosenTopic][questionNumber].correctAnswers[incorrectFilled];
+                        answers[random].text = questions[chosenTopic][questionNumber].incorrectAnswers[incorrectFilled];
                         incorrectFilled++;
-                    }
+												answerAdded[random] = true;
+										}
                 }
             }
 
             questionChange = false;
         }
     }
+
+		public void ChangeQuestion()
+		{
+			questionChange = true;
+			answerAdded[0] = false;
+			answerAdded[1] = false;
+			answerAdded[2] = false;
+			answerAdded[3] = false;
+		}
 }
