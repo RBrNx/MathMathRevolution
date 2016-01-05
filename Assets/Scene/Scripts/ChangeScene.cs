@@ -13,15 +13,15 @@ public class ChangeScene : MonoBehaviour {
     {
         if (levelSoundIndex == 1 || levelSoundIndex == 2 || levelSoundIndex == 3)
         {
-            lvl1Music.PlayDelayed(8);
+            lvl1Music.PlayDelayed(1);
         }
         else if (levelSoundIndex == 4 || levelSoundIndex == 5 || levelSoundIndex == 6)
         {
-            lvl2Music.PlayDelayed(8);
+            lvl2Music.PlayDelayed(1);
         }
         else if (levelSoundIndex == 7 || levelSoundIndex == 8 || levelSoundIndex == 9)
         {
-            lvl3Music.PlayDelayed(8);
+            lvl3Music.PlayDelayed(1);
         }
 
         levelSoundIndex = 0;

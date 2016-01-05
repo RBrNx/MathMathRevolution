@@ -16,6 +16,8 @@ public class AskQuestion : MonoBehaviour {
     int correctCount;
     int incorrectCount;
     float timer = 3;
+    float countdownTimer = 5;
+    bool gameStarted = false;
 
     int pressurePadPressed;
     bool pressurePadReleased = true;
@@ -47,30 +49,42 @@ public class AskQuestion : MonoBehaviour {
         gObj = GameObject.Find("Answer 4");
         answers[3] = gObj.GetComponent<TextMesh>();
 
-        Debug.Log("questionNumber: " + questionNumber + "\n"
+        /*Debug.Log("questionNumber: " + questionNumber + "\n"
             + "correctAnswers: " + correctAnswers + "\n"
             + "answeredCorrectly: " + answeredCorrectly + "\n"
             + "questionsAsked: " + questionsAsked + "\n"
             + "playerQA: " + PlayerPrefs.GetInt("questionsAsked") + "\n"
-            + "timeLeft: " + PlayerPrefs.GetInt("timeLeft"));
+            + "timeLeft: " + PlayerPrefs.GetInt("timeLeft"));*/
+
     }
 	
 	// Update is called once per frame
 	void Update () {
-        if (PlayerPrefs.GetInt("questionsAsked") == 10 || PlayerPrefs.GetInt("timeLeft") == 0)
+        if (countdownTimer > 0)
         {
-            timer -= Time.deltaTime;
+            countdownTimer -= Time.deltaTime;
+            Countdown();
         }
         else
         {
-            CheckQuestions();
-            CheckAnswers();
-        }
-        if(timer <= 0)
-        {
-            Application.LoadLevel(3);
+            if (PlayerPrefs.GetInt("questionsAsked") == 10 || PlayerPrefs.GetInt("timeLeft") == 0)
+            {
+                timer -= Time.deltaTime;
+                CheckQuestions();
+                CheckAnswers();
+            }
+            else
+            {
+                CheckQuestions();
+                CheckAnswers();
+            }
+            if (timer <= 0)
+            {
+                Application.LoadLevel(3);
+            }
         }
 
+        Debug.Log(pressurePadPressed);
     }
 
 	public void ChangeQuestion()
@@ -82,6 +96,37 @@ public class AskQuestion : MonoBehaviour {
 		answerAdded[2] = false;
 		answerAdded[3] = false;
 	}
+
+    void Countdown()
+    {
+        question.text = "Get Ready!";
+        if(countdownTimer < 4)
+        {
+            answers[0].text = "3";
+        }
+        if (countdownTimer < 3)
+        {
+            answers[1].text = "2";
+        }
+        if (countdownTimer < 2)
+        {
+            answers[2].text = "1";
+        }
+        if (countdownTimer < 1)
+        {
+            answers[3].text = "Go!";
+        }
+    }
+
+    public float getCountdown()
+    {
+        return countdownTimer;
+    }
+
+    public int getQA()
+    {
+        return questionsAsked;
+    }
 
     public void setPressurePad(int padID)
     {
@@ -141,7 +186,7 @@ public class AskQuestion : MonoBehaviour {
 
     void CheckAnswers()
     {
-        if(pressurePadReleased && pressurePadPressed != 0)
+        if(pressurePadReleased && pressurePadPressed != 0 && questionsAsked < 10)
         {
             for(int i = 0; i < correctCount; i++)
             {

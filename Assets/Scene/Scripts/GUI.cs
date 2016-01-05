@@ -27,17 +27,17 @@ public class GUI : MonoBehaviour {
 
         if(levelSoundIndex == 1 || levelSoundIndex == 2 || levelSoundIndex == 3)
         {
-            audioLength = csScript.lvl1Music.clip.length;
+            audioLength = csScript.lvl1Music.clip.length + 4;
             difference = 25000 - (int)audioLength * 50;
         }
         else if(levelSoundIndex == 4 || levelSoundIndex == 5 || levelSoundIndex == 6)
         {
-            audioLength = csScript.lvl2Music.clip.length;
+            audioLength = csScript.lvl2Music.clip.length + 4;
             difference = 25000 - (int)audioLength * 50;
         }
         else if(levelSoundIndex == 7 || levelSoundIndex == 8 || levelSoundIndex == 9)
         {
-            audioLength = csScript.lvl3Music.clip.length;
+            audioLength = csScript.lvl3Music.clip.length + 4;
             difference = 25000 - (int)audioLength * 50;
         }
 

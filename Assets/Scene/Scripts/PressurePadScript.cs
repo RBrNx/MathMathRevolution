@@ -21,49 +21,53 @@ public class PressurePadScript : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (PressurePad.name == "PressurePadRight")
+        if (aqScript.getCountdown() <= 0 && aqScript.getQA() < 10)
         {
-            PressurePad.GetComponent<Animation>().Play("PressurePadDown-R");
-            aqScript.setPressurePad(3);
+            if (PressurePad.name == "PressurePadRight")
+            {
+                PressurePad.GetComponent<Animation>().Play("PressurePadDown-R");
+                aqScript.setPressurePad(3);
+            }
+            if (PressurePad.name == "PressurePadLeft")
+            {
+                PressurePad.GetComponent<Animation>().Play("PressurePadDown-L");
+                aqScript.setPressurePad(1);
+            }
+            if (PressurePad.name == "PressurePadFront")
+            {
+                PressurePad.GetComponent<Animation>().Play("PressurePadDown-F");
+                aqScript.setPressurePad(2);
+            }
+            if (PressurePad.name == "PressurePadBack")
+            {
+                PressurePad.GetComponent<Animation>().Play("PressurePadDown-B");
+                aqScript.setPressurePad(4);
+            }
+            aqScript.setPressurePadReleased(false);
         }
-        if (PressurePad.name == "PressurePadLeft")
-        {
-            PressurePad.GetComponent<Animation>().Play("PressurePadDown-L");
-            aqScript.setPressurePad(1);
-        }
-        if (PressurePad.name == "PressurePadFront")
-        {
-            PressurePad.GetComponent<Animation>().Play("PressurePadDown-F");
-            aqScript.setPressurePad(2);
-        }
-        if (PressurePad.name == "PressurePadBack")
-        {
-            PressurePad.GetComponent<Animation>().Play("PressurePadDown-B");
-            aqScript.setPressurePad(4);
-        }
-
-        aqScript.setPressurePadReleased(false);
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (PressurePad.name == "PressurePadRight")
+        if (aqScript.getCountdown() <= 0 && aqScript.getQA() < 10)
         {
-            PressurePad.GetComponent<Animation>().Play("PressurePadUp-R");
+            if (PressurePad.name == "PressurePadRight")
+            {
+                PressurePad.GetComponent<Animation>().Play("PressurePadUp-R");
+            }
+            if (PressurePad.name == "PressurePadLeft")
+            {
+                PressurePad.GetComponent<Animation>().Play("PressurePadUp-L");
+            }
+            if (PressurePad.name == "PressurePadFront")
+            {
+                PressurePad.GetComponent<Animation>().Play("PressurePadUp-F");
+            }
+            if (PressurePad.name == "PressurePadBack")
+            {
+                PressurePad.GetComponent<Animation>().Play("PressurePadUp-B");
+            }
+            aqScript.setPressurePadReleased(true);
         }
-        if (PressurePad.name == "PressurePadLeft")
-        {
-            PressurePad.GetComponent<Animation>().Play("PressurePadUp-L");
-        }
-        if (PressurePad.name == "PressurePadFront")
-        {
-            PressurePad.GetComponent<Animation>().Play("PressurePadUp-F");
-        }
-        if (PressurePad.name == "PressurePadBack")
-        {
-            PressurePad.GetComponent<Animation>().Play("PressurePadUp-B");
-        }
-
-        aqScript.setPressurePadReleased(true);
     }
 }
