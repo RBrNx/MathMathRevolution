@@ -17,7 +17,7 @@ public class AskQuestion : MonoBehaviour {
     int incorrectCount;
     float timer = 3;
     float countdownTimer = 5;
-    bool gameStarted = false;
+    string[] questionFeedback = new string[10];
 
     int pressurePadPressed;
     bool pressurePadReleased = true;
@@ -83,11 +83,79 @@ public class AskQuestion : MonoBehaviour {
                 Application.LoadLevel(3);
             }
         }
-
-        Debug.Log(pressurePadPressed);
     }
 
-	public void ChangeQuestion()
+    void CheckQuestions()
+    {
+        if (questionChange)
+        {
+            padCount = 0;
+            correctAnswers = 0;
+
+            correctCount = questions[chosenTopic][questionNumber].correctAnswers.Count;
+            incorrectCount = 4 - correctCount;
+            question.text = questions[chosenTopic][questionNumber].question;
+            PlayerPrefs.SetString("Feedback " + questionsAsked, question.text);
+            FormatText(question, 8);
+            int correctFilled = 0, incorrectFilled = 0;
+
+            while (correctFilled != correctCount || incorrectFilled != incorrectCount)
+            {
+                int random = Random.Range(0, 4);
+                if (!answerAdded[random])
+                {
+                    if (correctFilled != correctCount)
+                    {
+                        answers[random].text = questions[chosenTopic][questionNumber].correctAnswers[correctFilled];
+                        correctFilled++;
+                        answerAdded[random] = true;
+                    }
+                    else if (incorrectFilled != incorrectCount)
+                    {
+                        answers[random].text = questions[chosenTopic][questionNumber].incorrectAnswers[incorrectFilled];
+                        incorrectFilled++;
+                        answerAdded[random] = true;
+                    }
+                }
+            }
+
+            questionChange = false;
+        }
+    }
+
+    void CheckAnswers()
+    {
+        if (pressurePadReleased && pressurePadPressed != 0 && questionsAsked < 10)
+        {
+            for (int i = 0; i < correctCount; i++)
+            {
+                if (answers[pressurePadPressed - 1].text == questions[chosenTopic][questionNumber].correctAnswers[i])
+                {
+                    correctAnswers++;
+                }
+            }
+            padCount++;
+            pressurePadPressed = 0;
+
+            if (correctAnswers != correctCount && padCount == correctCount)
+            {
+                questionsAsked++;
+                PlayerPrefs.SetInt("questionsAsked", questionsAsked);
+                ChangeQuestion();
+            }
+            else if (correctAnswers == correctCount && padCount == correctCount)
+            {
+                answeredCorrectly++;
+                PlayerPrefs.DeleteKey("Feedback " + questionsAsked);
+                questionsAsked++;
+                PlayerPrefs.SetInt("questionsAsked", questionsAsked);
+                PlayerPrefs.SetInt("correctAnswers", answeredCorrectly);
+                ChangeQuestion();
+            }
+        }
+    }
+
+    public void ChangeQuestion()
 	{
         questionNumber++;
         questionChange = true;
@@ -128,6 +196,11 @@ public class AskQuestion : MonoBehaviour {
         return questionsAsked;
     }
 
+    public string[] getQuestionFeedback()
+    {
+        return questionFeedback;
+    }
+
     public void setPressurePad(int padID)
     {
         pressurePadPressed = padID;
@@ -146,74 +219,6 @@ public class AskQuestion : MonoBehaviour {
     IEnumerator Wait(float time)
     {
         yield return new WaitForSeconds(time);
-    }
-
-    void CheckQuestions()
-    {
-        if (questionChange)
-        {
-            padCount = 0;
-            correctAnswers = 0;
-            
-            correctCount = questions[chosenTopic][questionNumber].correctAnswers.Count;
-            incorrectCount = 4 - correctCount;
-            question.text = questions[chosenTopic][questionNumber].question;
-            FormatText(question, 8);
-            int correctFilled = 0, incorrectFilled = 0;
-
-            while (correctFilled != correctCount || incorrectFilled != incorrectCount)
-            {
-                int random = Random.Range(0, 4);
-                if (!answerAdded[random])
-                {
-                    if (correctFilled != correctCount)
-                    {
-                        answers[random].text = questions[chosenTopic][questionNumber].correctAnswers[correctFilled];
-                        correctFilled++;
-                        answerAdded[random] = true;
-                    }
-                    else if (incorrectFilled != incorrectCount)
-                    {
-                        answers[random].text = questions[chosenTopic][questionNumber].incorrectAnswers[incorrectFilled];
-                        incorrectFilled++;
-                        answerAdded[random] = true;
-                    }
-                }
-            }
-
-            questionChange = false;
-        }
-    }
-
-    void CheckAnswers()
-    {
-        if(pressurePadReleased && pressurePadPressed != 0 && questionsAsked < 10)
-        {
-            for(int i = 0; i < correctCount; i++)
-            {
-                if(answers[pressurePadPressed - 1].text == questions[chosenTopic][questionNumber].correctAnswers[i])
-                {
-                    correctAnswers++;
-                }
-            }
-            padCount++;
-            pressurePadPressed = 0;
-
-            if (correctAnswers != correctCount && padCount == correctCount)
-            {
-                questionsAsked++;
-                PlayerPrefs.SetInt("questionsAsked", questionsAsked);
-                ChangeQuestion();
-            }
-            else if (correctAnswers == correctCount && padCount == correctCount)
-            {
-                answeredCorrectly++;
-                questionsAsked++;
-                PlayerPrefs.SetInt("questionsAsked", questionsAsked);
-                PlayerPrefs.SetInt("correctAnswers", answeredCorrectly);
-                ChangeQuestion();
-            }
-        }
     }
 
     static void FormatText(TextMesh textObj, float desiredWidthOfMesh)
