@@ -21,11 +21,6 @@ public class GameOver : MonoBehaviour {
 
         gObj = GameObject.Find("AnswersText");
         guiAnswersText = gObj.GetComponent<Text>();
-
-        for(int i = 0; i < 10; i++)
-        {
-
-        }
     }
 	
 	// Update is called once per frame
