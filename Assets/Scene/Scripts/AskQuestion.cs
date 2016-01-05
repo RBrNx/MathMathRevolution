@@ -158,6 +158,7 @@ public class AskQuestion : MonoBehaviour {
             correctCount = questions[chosenTopic][questionNumber].correctAnswers.Count;
             incorrectCount = 4 - correctCount;
             question.text = questions[chosenTopic][questionNumber].question;
+            FormatText(question, 8);
             int correctFilled = 0, incorrectFilled = 0;
 
             while (correctFilled != correctCount || incorrectFilled != incorrectCount)
@@ -213,5 +214,32 @@ public class AskQuestion : MonoBehaviour {
                 ChangeQuestion();
             }
         }
+    }
+
+    static void FormatText(TextMesh textObj, float desiredWidthOfMesh)
+    {
+        string[] words = textObj.text.Split(" "[0]);
+        string newString = "";
+        string testString = "";
+
+        for (int i = 0; i < words.Length; i++)
+        {
+            testString = testString + words[i] + " ";
+            textObj.text = testString;
+
+            Quaternion textRot = textObj.transform.rotation;
+            textObj.transform.rotation = Quaternion.identity;
+            float textSize = textObj.GetComponent<Renderer>().bounds.size.x;
+            textObj.transform.rotation = textRot;
+
+            if (textSize > desiredWidthOfMesh)
+            {
+                testString = words[i] + " ";
+                newString = newString + "\n" + words[i] + " ";
+            }
+            else
+                newString = newString + words[i] + " ";
+        }
+        textObj.text = newString;
     }
 }
