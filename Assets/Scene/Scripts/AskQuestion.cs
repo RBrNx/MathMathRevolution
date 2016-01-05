@@ -6,7 +6,7 @@ public class AskQuestion : MonoBehaviour {
 
     Dictionary<string, List<Question>> questions;
     public TextAsset questionsFile;
-    string chosenTopic = "Topic 1 - Easy";
+    string chosenTopic;
     int questionNumber = 0;
     bool questionChange = true;
     GameObject gObj;
@@ -15,17 +15,20 @@ public class AskQuestion : MonoBehaviour {
 	bool[] answerAdded = { false, false, false, false };
     int correctCount;
     int incorrectCount;
+    float timer = 3;
 
     int pressurePadPressed;
     bool pressurePadReleased = true;
-    int correctAnswers = 0;
+    int correctAnswers;
 
-    int answeredCorrectly = 0;
-    int questionsAsked = 0;
+    int answeredCorrectly;
+    int questionsAsked;
     int padCount = 0;
 
     // Use this for initialization
     void Start () {
+        chosenTopic = PlayerPrefs.GetString("ChosenTopic");
+
 		answers = new TextMesh[4];
 		questions = Question.loadQuestions(questionsFile.text);
 
@@ -43,24 +46,37 @@ public class AskQuestion : MonoBehaviour {
 
         gObj = GameObject.Find("Answer 4");
         answers[3] = gObj.GetComponent<TextMesh>();
+
+        Debug.Log("questionNumber: " + questionNumber + "\n"
+            + "correctAnswers: " + correctAnswers + "\n"
+            + "answeredCorrectly: " + answeredCorrectly + "\n"
+            + "questionsAsked: " + questionsAsked + "\n"
+            + "playerQA: " + PlayerPrefs.GetInt("questionsAsked") + "\n"
+            + "timeLeft: " + PlayerPrefs.GetInt("timeLeft"));
     }
 	
 	// Update is called once per frame
 	void Update () {
-
-        if (Input.GetKeyUp("space"))
+        if (PlayerPrefs.GetInt("questionsAsked") == 10 || PlayerPrefs.GetInt("timeLeft") == 0)
         {
-            questionNumber++;
-			ChangeQuestion();
+            timer -= Time.deltaTime;
+        }
+        else
+        {
+            CheckQuestions();
+            CheckAnswers();
+        }
+        if(timer <= 0)
+        {
+            Application.LoadLevel(3);
         }
 
-        CheckQuestions();
-        CheckAnswers();
     }
 
 	public void ChangeQuestion()
 	{
-		questionChange = true;
+        questionNumber++;
+        questionChange = true;
 		answerAdded[0] = false;
 		answerAdded[1] = false;
 		answerAdded[2] = false;
@@ -75,6 +91,16 @@ public class AskQuestion : MonoBehaviour {
     public void setPressurePadReleased(bool padRelease)
     {
         pressurePadReleased = padRelease;
+    }
+
+    public void setChosenTopic(string topic)
+    {
+        chosenTopic = topic;
+    }
+
+    IEnumerator Wait(float time)
+    {
+        yield return new WaitForSeconds(time);
     }
 
     void CheckQuestions()
@@ -130,15 +156,15 @@ public class AskQuestion : MonoBehaviour {
             if (correctAnswers != correctCount && padCount == correctCount)
             {
                 questionsAsked++;
-                questionNumber++;
+                PlayerPrefs.SetInt("questionsAsked", questionsAsked);
                 ChangeQuestion();
             }
             else if (correctAnswers == correctCount && padCount == correctCount)
             {
                 answeredCorrectly++;
                 questionsAsked++;
-
-                questionNumber++;
+                PlayerPrefs.SetInt("questionsAsked", questionsAsked);
+                PlayerPrefs.SetInt("correctAnswers", answeredCorrectly);
                 ChangeQuestion();
             }
         }

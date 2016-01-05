@@ -1346,7 +1346,7 @@ public class KinectManager : MonoBehaviour
 					usersMapRect = new Rect(cameraRect.width - displayWidth, cameraRect.height, displayWidth, -displayHeight);
 				}
 
-	            GUI.DrawTexture(usersMapRect, usersLblTex);
+	            UnityEngine.GUI.DrawTexture(usersMapRect, usersLblTex);
 	        }
 
 			else if(ComputeColorMap && (/**(allUsers.Count == 0) ||*/ DisplayColorMap))
@@ -1376,7 +1376,7 @@ public class KinectManager : MonoBehaviour
 //					}
 				}
 
-				GUI.DrawTexture(usersClrRect, usersClrTex);
+				UnityEngine.GUI.DrawTexture(usersClrRect, usersClrTex);
 			}
 		}
     }

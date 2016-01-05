@@ -1,30 +1,189 @@
-Mono path[0] = 'C:/Users/RBrNx/Desktop/MathMathRev/MathMathRevolution_Data/Managed'
-Mono path[1] = 'C:/Users/RBrNx/Desktop/MathMathRev/MathMathRevolution_Data/Mono'
-Mono config path = 'C:/Users/RBrNx/Desktop/MathMathRev/MathMathRevolution_Data/Mono/etc'
-PlayerConnection initialized from C:/Users/RBrNx/Desktop/MathMathRev/MathMathRevolution_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55190
-Multi-casting "[IP] 192.168.1.65 [Port] 55190 [Flags] 2 [Guid] 2238051470 [EditorId] 2573332393 [Version] 1048832 [Id] WindowsPlayer(Conor-PC) [Debug] 0" to [225.0.0.222:54997]...
-PlayerConnection already initialized - listening to [192.168.1.65:55190]
-Initialize engine version: 5.2.1f1 (44735ea161b3)
+Mono path[0] = 'C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Managed'
+Mono path[1] = 'C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono'
+Mono config path = 'C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55456
+Multi-casting "[IP] 10.7.13.112 [Port] 55456 [Flags] 2 [Guid] 3240053673 [EditorId] 2849405179 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-RMM1307) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [10.7.13.112:55456]
+Initialize engine version: 5.2.2f1 (3757309da7e7)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: AMD Radeon HD 6800 Series (ID=0x6739)
-    Vendor:   ATI
-    VRAM:     1011 MB
+    Renderer: Intel(R) HD Graphics 4600 (ID=0x416)
+    Vendor:   Intel
+    VRAM:     128 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\RBrNx\Desktop\MathMathRev\MathMathRevolution_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\RBrNx\Desktop\MathMathRev\MathMathRevolution_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\RBrNx\Desktop\MathMathRev\MathMathRevolution_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\RBrNx\Desktop\MathMathRev\MathMathRevolution_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\RBrNx\Desktop\MathMathRev\MathMathRevolution_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
-Loading C:\Users\RBrNx\Desktop\MathMathRev\MathMathRevolution_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-Platform assembly: C:\Users\RBrNx\Desktop\MathMathRev\MathMathRevolution_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\RBrNx\Desktop\MathMathRev\MathMathRevolution_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\RBrNx\Desktop\MathMathRev\MathMathRevolution_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\RBrNx\Desktop\MathMathRev\MathMathRevolution_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\RBrNx\Desktop\MathMathRev\MathMathRevolution_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.148 seconds
-desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+Platform assembly: C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\MathMathRevolution_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\MathMathRevolution_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\MathMathRevolution_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\MathMathRevolution_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\MathMathRevolution_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\MathMathRevolution_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\MathMathRevolution_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\MathMathRevolution_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\MathMathRevolution_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\MathMathRevolution_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\MathMathRevolution_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\MathMathRevolution_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\MathMathRevolution_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.149 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\MathMathRevolution_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\MathMathRevolution_Data\Managed\System.Xml.Linq.dll (this message is harmless)
+Platform assembly: C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\MathMathRevolution_Data\Managed\System.Xml.dll (this message is harmless)
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 16f0 -> priority: 1 
+  Thread -> id: d9c -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 77.688698 ms
+System memory in use before: 18.7 MB.
+System memory in use after: 18.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 304.
+Total: 17.523960 ms (FindLiveObjects: 0.021287 ms CreateObjectMapping: 0.011404 ms MarkObjects: 17.477201 ms  DeleteObjects: 0.012924 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.697172 ms
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/.\Kinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/.\Kinect10
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/libKinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/.\libKinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/libKinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/.\Kinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/.\Kinect10
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/libKinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/.\libKinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/libKinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/.\Kinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/.\Kinect10
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/libKinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/.\libKinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/libKinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/.\Kinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/.\Kinect10
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/libKinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/.\libKinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/libKinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/.\Kinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/.\Kinect10
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/libKinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/.\libKinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/libKinect10.dll
+Please check the Kinect SDK installation.
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+KinectManager:Awake() (at C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\Assets\KinectScripts\KinectManager.cs:1004)
+ 
+(Filename: C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/Assets/KinectScripts/KinectManager.cs Line: 1004)
+
+System.DllNotFoundException: Kinect10.dll
+  at (wrapper managed-to-native) KinectWrapper:NuiInitialize (KinectWrapper/NuiInitializeFlags)
+  at KinectManager.Awake () [0x00002] in C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\Assets\KinectScripts\KinectManager.cs:868 
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+KinectManager:Awake() (at C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\Assets\KinectScripts\KinectManager.cs:1005)
+ 
+(Filename: C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/Assets/KinectScripts/KinectManager.cs Line: 1005)
+
+System memory in use before: 139.4 MB.
+System memory in use after: 139.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 855.
+Total: 0.247849 ms (FindLiveObjects: 0.022047 ms CreateObjectMapping: 0.019387 ms MarkObjects: 0.187407 ms  DeleteObjects: 0.018626 ms)
+
+questionNumber: 0
+correctAnswers: 0
+answeredCorrectly: 0
+questionsAsked: 0
+playerQA: 0
+timeLeft: 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+AskQuestion:Start() (at C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\Assets\Scene\Scripts\AskQuestion.cs:50)
+ 
+(Filename: C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/Assets/Scene/Scripts/AskQuestion.cs Line: 50)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 18.002552 ms
+System memory in use before: 139.8 MB.
+System memory in use after: 138.8 MB.
+
+Unloading 115 unused Assets to reduce memory usage. Loaded Objects now: 267.
+Total: 0.866713 ms (FindLiveObjects: 0.031551 ms CreateObjectMapping: 0.013684 ms MarkObjects: 0.287003 ms  DeleteObjects: 0.533713 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.912330 ms
+System memory in use before: 19.4 MB.
+System memory in use after: 19.4 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 341.
+Total: 0.503682 ms (FindLiveObjects: 0.026609 ms CreateObjectMapping: 0.014445 ms MarkObjects: 0.447801 ms  DeleteObjects: 0.012924 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.722261 ms
+Please check the Kinect SDK installation.
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+KinectManager:Awake() (at C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\Assets\KinectScripts\KinectManager.cs:1004)
+ 
+(Filename: C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/Assets/KinectScripts/KinectManager.cs Line: 1004)
+
+System.DllNotFoundException: Kinect10.dll
+  at (wrapper managed-to-native) KinectWrapper:NuiInitialize (KinectWrapper/NuiInitializeFlags)
+  at KinectManager.Awake () [0x00002] in C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\Assets\KinectScripts\KinectManager.cs:868 
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+KinectManager:Awake() (at C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\Assets\KinectScripts\KinectManager.cs:1005)
+ 
+(Filename: C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/Assets/KinectScripts/KinectManager.cs Line: 1005)
+
+System memory in use before: 140.1 MB.
+System memory in use after: 140.1 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 887.
+Total: 0.382038 ms (FindLiveObjects: 0.033832 ms CreateObjectMapping: 0.022428 ms MarkObjects: 0.304490 ms  DeleteObjects: 0.020527 ms)
+
+questionNumber: 0
+correctAnswers: 0
+answeredCorrectly: 0
+questionsAsked: 0
+playerQA: 0
+timeLeft: 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+AskQuestion:Start() (at C:\Users\RBrNx\Desktop\MathMathRev - Copy\mathmathrevolution\Assets\Scene\Scripts\AskQuestion.cs:50)
+ 
+(Filename: C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/Assets/Scene/Scripts/AskQuestion.cs Line: 50)
+
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/.\Kinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/.\Kinect10
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/Kinect10
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/libKinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/.\libKinect10.dll
+Fallback handler could not load library C:/Users/RBrNx/Desktop/MathMathRev - Copy/mathmathrevolution/MathMathRevolution_Data/Mono/libKinect10.dll

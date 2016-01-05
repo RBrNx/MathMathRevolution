@@ -1,23 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Topic name="Topic 1 - Easy">
-	<Question value="Horizontal Lines have a Gradient of _ ?">
-		<IncorrectAnswer value="1"/>
-    <CorrectAnswer value="0"/>
-		<IncorrectAnswer value="2"/>
-    <IncorrectAnswer value="10"/>
-	</Question>
 
-  <Question value="y = 5x + 7, what is the Gradient? What is the Y-Intercept?">
-    <IncorrectAnswer value="0"/>
-    <CorrectAnswer value="5"/>
-    <IncorrectAnswer value="Y"/>
-    <CorrectAnswer value="7"/>
-  </Question>
+<Topics>
+  <Topic name="1.1">
+	  <Question value="Horizontal Lines have a Gradient of _ ?">
+		  <IncorrectAnswer value="1"/>
+      <CorrectAnswer value="0"/>
+		  <IncorrectAnswer value="2"/>
+      <IncorrectAnswer value="10"/>
+	  </Question>
 
-  <Question value="What is 5 + 6">
-    <IncorrectAnswer value="3"/>
-    <CorrectAnswer value="11"/>
-    <IncorrectAnswer value="5"/>
-    <IncorrectAnswer value="X"/>
-  </Question>
-</Topic>
+    <Question value="Vertical Lines have a Gradient of _ ?">
+      <IncorrectAnswer value="1"/>
+      <CorrectAnswer value="n/a"/>
+      <IncorrectAnswer value="0"/>
+      <IncorrectAnswer value="5"/>
+    </Question>
+
+    <Question value="y = 5x + 7, what is the Gradient? What is the Y-Intercept?">
+      <IncorrectAnswer value="0"/>
+      <CorrectAnswer value="5"/>
+      <IncorrectAnswer value="y"/>
+      <CorrectAnswer value="7"/>
+    </Question>
+
+    <Question value="3 + 4x = y, what is the Gradient? What is the Y-Intercept?">
+      <IncorrectAnswer value="7"/>
+      <CorrectAnswer value="3"/>
+      <IncorrectAnswer value="7y"/>
+      <CorrectAnswer value="4"/>
+    </Question>
+
+    <Question value="x + 5 = 12. Find x.">
+      <IncorrectAnswer value="5"/>
+      <CorrectAnswer value="7"/>
+      <IncorrectAnswer value="12"/>
+      <IncorrectAnswer value="6"/>
+    </Question>
+
+    <Question value="3 + 2x = 9. Find x.">
+      <IncorrectAnswer value="9"/>
+      <CorrectAnswer value="3"/>
+      <IncorrectAnswer value="12"/>
+      <IncorrectAnswer value="6"/>
+    </Question>
+
+    <Question value="x + 10 &lt; 17. Find x.">
+      <IncorrectAnswer value="x &lt; 2"/>
+      <CorrectAnswer value="x &lt; 7"/>
+      <IncorrectAnswer value="x &lt; 6"/>
+      <IncorrectAnswer value="x &gt; 7"/>
+    </Question>
+
+    <Question value="2x + 10 &gt; 18. Find x.">
+      <IncorrectAnswer value="x &lt; 3"/>
+      <CorrectAnswer value="x &gt; 4"/>
+      <IncorrectAnswer value="x &gt; 3"/>
+      <IncorrectAnswer value="x &gt; 1"/>
+    </Question>
+
+    <Question value="Change the Subject of the Formula to C: mx + c = y">
+      <IncorrectAnswer value="y - c = mx"/>
+      <CorrectAnswer value="c = y - mx"/>
+      <IncorrectAnswer value="c = y + mx"/>
+      <IncorrectAnswer value="c - mx = y"/>
+    </Question>
+
+    <Question value="Change the Subject of the Formula to t: d = t - 8">
+      <IncorrectAnswer value="t = d - 8"/>
+      <CorrectAnswer value="t = d + 8"/>
+      <IncorrectAnswer value="d = t"/>
+      <IncorrectAnswer value="t - 8 = d"/>
+    </Question>
+
+    <Question value="Level Complete!">
+      <IncorrectAnswer value=" "/>
+      <CorrectAnswer value=" "/>
+      <IncorrectAnswer value=" "/>
+      <IncorrectAnswer value=" "/>
+    </Question>
+  </Topic>
+
+  <Topic name="1.2">
+    <Question value="Two lines are Parallel. One has a gradient of 5, what is the gradient of the other?">
+      <IncorrectAnswer value="0"/>
+      <CorrectAnswer value="5"/>
+      <IncorrectAnswer value="1"/>
+      <IncorrectAnswer value="n/a"/>
+    </Question>
+
+    <Question value="Gradient of a Vertical Line? Gradient of a Horizontal Line?">
+      <IncorrectAnswer value="1"/>
+      <CorrectAnswer value="n/a"/>
+      <IncorrectAnswer value="2"/>
+      <CorrectAnswer value="0"/>
+    </Question>
+
+    <Question value="y = 5x + 2x + 7 + 6, what is the Gradient? What is the Y-Intercept?">
+      <IncorrectAnswer value="6"/>
+      <CorrectAnswer value="7"/>
+      <IncorrectAnswer value="5"/>
+      <CorrectAnswer value="13"/>
+    </Question>
+
+    <Question value="3 + 2x + 5 + 4x = y, what is the Gradient? What is the Y-Intercept?">
+      <IncorrectAnswer value="5"/>
+      <CorrectAnswer value="6"/>
+      <IncorrectAnswer value="4"/>
+      <CorrectAnswer value="8"/>
+    </Question>
+
+    <Question value="3x + 9 = 36. Find x.">
+      <IncorrectAnswer value="3"/>
+      <CorrectAnswer value="9"/>
+      <IncorrectAnswer value="8"/>
+      <IncorrectAnswer value="7"/>
+    </Question>
+
+    <Question value="3x + 4 + 2x = 24. Find x.">
+      <IncorrectAnswer value="5"/>
+      <CorrectAnswer value="4"/>
+      <IncorrectAnswer value="12"/>
+      <IncorrectAnswer value="6"/>
+    </Question>
+
+    <Question value="3x - 6 &lt; 9. Find x.">
+      <IncorrectAnswer value="x &lt; 9"/>
+      <CorrectAnswer value="x &lt; 5"/>
+      <IncorrectAnswer value="x &lt; 7"/>
+      <IncorrectAnswer value="x &gt; 5"/>
+    </Question>
+
+    <Question value="8x + 2 &gt; 34. Find x.">
+      <IncorrectAnswer value="x &lt; 3"/>
+      <CorrectAnswer value="x &gt; 4"/>
+      <IncorrectAnswer value="x &gt; 2"/>
+      <IncorrectAnswer value="x &gt; 3"/>
+    </Question>
+
+    <Question value="Change the Subject of the Formula to C: mx + c = y">
+      <IncorrectAnswer value="y - c = mx"/>
+      <CorrectAnswer value="c = y - mx"/>
+      <IncorrectAnswer value="c = y + mx"/>
+      <IncorrectAnswer value="c - mx = y"/>
+    </Question>
+
+    <Question value="Change the Subject of the Formula to t: d = 6 + 4t - 7">
+      <IncorrectAnswer value="t = d/4 + 1"/>
+      <CorrectAnswer value="t = (d + 1)/4"/>
+      <IncorrectAnswer value="d = t - 7"/>
+      <IncorrectAnswer value="t - 6 = d"/>
+    </Question>
+
+    <Question value="Level Complete!">
+      <IncorrectAnswer value=" "/>
+      <CorrectAnswer value=" "/>
+      <IncorrectAnswer value=" "/>
+      <IncorrectAnswer value=" "/>
+    </Question>
+  </Topic>
+</Topics>
