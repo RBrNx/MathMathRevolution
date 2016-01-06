@@ -99,7 +99,6 @@
     <Compile Include="Assets\LoggedInTextScript.cs" />
     <Compile Include="Assets\LoginButton.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
-    <Compile Include="Assets\Scene\Scripts\AnswerQuestion.cs" />
     <Compile Include="Assets\Scene\Scripts\AskQuestion.cs" />
     <Compile Include="Assets\Scene\Scripts\Assessment.cs" />
     <Compile Include="Assets\Scene\Scripts\CameraMovement.cs" />
@@ -116,7 +115,6 @@
     <Compile Include="Assets\Scene\Scripts\Rotate.cs" />
     <Compile Include="Assets\Scene\Scripts\SetPlayerDetails.cs" />
     <Compile Include="Assets\Scene\Scripts\StudentLoginButton.cs" />
-    <Compile Include="Assets\Scene\Scripts\TextMeshWrap.cs" />
     <Compile Include="Assets\Scene\Scripts\UsrnmPswrdLoginButton.cs" />
   </ItemGroup>
   <ItemGroup>
