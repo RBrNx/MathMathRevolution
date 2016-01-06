@@ -8,7 +8,12 @@ public class LoginButton : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		if(loggedIn)
+		{
+			GetComponent<Assessment>().UpdateWonBadges();
+			GetComponent<Assessment>().UpdateGameDesc();
+			GetComponent<Assessment>().UpdateLeaderboard();
+		}
 	}
 	
 	// Update is called once per frame

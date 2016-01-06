@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour {
 
@@ -27,9 +28,16 @@ public class ChangeScene : MonoBehaviour {
         levelSoundIndex = 0;
     }
 
-	public void changeScene(int sceneIndex)
+	public void changeScene(string scene)
     {
-        Application.LoadLevel(sceneIndex);
+			if(LoginButton.loggedIn)
+			{
+				GetComponent<Assessment>().StartGame(scene);
+			}
+			else
+			{
+				SceneManager.LoadScene(scene);
+			}
     }
 
     public void setLevelSoundIndex(int newLevelSoundIndex)

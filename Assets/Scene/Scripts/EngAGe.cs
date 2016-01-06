@@ -12,7 +12,7 @@ public class EngAGe : MonoBehaviour {
 	
 	static public EngAGe E;
 
-	public static int idSG = 293;
+	public static int idSG = 294;
 	private static int idStudent;
 	private static int idPlayer = -1;
 	private static int version = 0;

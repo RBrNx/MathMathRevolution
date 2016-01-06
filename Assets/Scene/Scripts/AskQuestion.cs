@@ -1,18 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using SimpleJSON;
+using UnityEngine.UI;
 
 public class AskQuestion : MonoBehaviour {
 
     Dictionary<string, List<Question>> questions;
     public TextAsset questionsFile;
+		public Text feedbackText;
     string chosenTopic;
     int questionNumber = 0;
     bool questionChange = true;
     GameObject gObj;
     TextMesh question;
     TextMesh[] answers;
-	bool[] answerAdded = { false, false, false, false };
+		bool[] answerAdded = { false, false, false, false };
     int correctCount;
     int incorrectCount;
     float timer = 3;
@@ -144,6 +147,7 @@ public class AskQuestion : MonoBehaviour {
             {
                 questionsAsked++;
                 PlayerPrefs.SetInt("questionsAsked", questionsAsked);
+								GetComponent<Assessment>().AnswerQuestion(false, AssessAction);
                 ChangeQuestion();
                 wrongBuzzer.Play();
             }
@@ -154,7 +158,8 @@ public class AskQuestion : MonoBehaviour {
                 questionsAsked++;
                 PlayerPrefs.SetInt("questionsAsked", questionsAsked);
                 PlayerPrefs.SetInt("correctAnswers", answeredCorrectly);
-                ChangeQuestion();
+								GetComponent<Assessment>().AnswerQuestion(true, AssessAction);
+								ChangeQuestion();
                 correctBuzzer.Play();
             }
         }
@@ -252,4 +257,11 @@ public class AskQuestion : MonoBehaviour {
         }
         textObj.text = newString;
     }
+
+	public void AssessAction(JSONNode data)
+	{
+		bool win = false, lose = false, help = false;
+		string feedback = GetComponent<Assessment>().ConvertFeedback(data, ref win, ref lose, ref help);
+		feedbackText.text = feedback;
+	}
 }

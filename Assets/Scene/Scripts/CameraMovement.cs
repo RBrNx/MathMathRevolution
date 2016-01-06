@@ -30,7 +30,7 @@ public class CameraMovement : MonoBehaviour {
             {
                 isLerping = false;
                 GameObject.Find("Canvas").SetActive(false);
-                GameObject.Find("_Manager").GetComponent<ChangeScene>().changeScene(1);
+                GameObject.Find("_Manager").GetComponent<ChangeScene>().changeScene("LevelSelect");
             }
         }
     }
