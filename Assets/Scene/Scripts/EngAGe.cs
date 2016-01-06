@@ -12,7 +12,7 @@ public class EngAGe : MonoBehaviour {
 	
 	static public EngAGe E;
 
-	public static int idSG = 000; //TODO Add the game ID!!!!!
+	public static int idSG = 293;
 	private static int idStudent;
 	private static int idPlayer = -1;
 	private static int version = 0;
@@ -141,7 +141,8 @@ public class EngAGe : MonoBehaviour {
 				version = loginData["version"].AsInt;
 				idStudent = loginData["student"]["id"].AsInt;
 				parameters = loginData["params"].AsArray;
-				
+
+				LoginButton.loggedIn = true;
 				Application.LoadLevel(sceneNoParameters);
 			}
 			else
@@ -191,6 +192,7 @@ public class EngAGe : MonoBehaviour {
 			idStudent = 0;
 			parameters = loginData["params"].AsArray;
 			version = loginData["version"].AsInt;
+			LoginButton.loggedIn = true;
 			Application.LoadLevel(sceneParameters);
 		}
 		else

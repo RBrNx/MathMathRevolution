@@ -16,8 +16,8 @@ public class UsrnmPswrdLoginButton : MonoBehaviour {
 	
 	}
 
-	void OnClick()
+	public void OnClick()
 	{
-		GetComponent<Assessment>().LoginStudent(usernameInput.text, passwordInput.text, "StudentLoginScene", "InitialLoginScene", "LoginScene");
+		GetComponent<Assessment>().LoginStudent(usernameInput.text, passwordInput.text, "StudentLoginScene", "InitialLoginScene", "MainMenu");
 	}
 }

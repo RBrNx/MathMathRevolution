@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class StudentLoginButton : MonoBehaviour {
 
@@ -13,8 +14,8 @@ public class StudentLoginButton : MonoBehaviour {
 
 	}
 
-	void OnClick()
+	public void OnClick()
 	{
-		GetComponent<Assessment>().LoginGuest("LoginScene", "StudentLoginScene");
+		SceneManager.LoadScene("StudentLoginScene");
 	}
 }

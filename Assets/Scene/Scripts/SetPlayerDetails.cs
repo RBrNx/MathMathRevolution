@@ -17,9 +17,10 @@ public class SetPlayerDetails : MonoBehaviour {
 	
 	}
 
-	void OnClick()
+	public void OnClick()
 	{
 		GetComponent<Assessment>().SetNameAndAge(nameInput.text, ageInput.text);
-		SceneManager.LoadScene("LoginScene");
+		LoginButton.loggedIn = true;
+		SceneManager.LoadScene("MainMenu");
 	}
 }

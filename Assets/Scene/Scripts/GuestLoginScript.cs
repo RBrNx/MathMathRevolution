@@ -13,7 +13,7 @@ public class GuestLoginScript : MonoBehaviour {
 	
 	}
 
-	void OnClick()
+	public void OnClick()
 	{
 		GetComponent<Assessment>().LoginGuest("LoginScene", "InitialLoginScene");
 	}

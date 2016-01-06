@@ -71,6 +71,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BackButton.cs" />
     <Compile Include="Assets\GUI\ObjectLabel.cs" />
     <Compile Include="Assets\JSON Tests\CSharp\Test_CSharp.cs" />
     <Compile Include="Assets\KinectScripts\AvatarController.cs" />
@@ -93,10 +94,13 @@
     <Compile Include="Assets\KinectScripts\Samples\MouseControl.cs" />
     <Compile Include="Assets\KinectScripts\Samples\SetSceneAvatars.cs" />
     <Compile Include="Assets\KinectScripts\Samples\SimpleGestureListener.cs" />
+    <Compile Include="Assets\LoggedInTextScript.cs" />
+    <Compile Include="Assets\LoginButton.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
     <Compile Include="Assets\Scene\Scripts\AnswerQuestion.cs" />
     <Compile Include="Assets\Scene\Scripts\AskQuestion.cs" />
     <Compile Include="Assets\Scene\Scripts\Assessment.cs" />
+    <Compile Include="Assets\Scene\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scene\Scripts\ChangeScene.cs" />
     <Compile Include="Assets\Scene\Scripts\CycleCookiesTimer.cs" />
     <Compile Include="Assets\Scene\Scripts\EngAGe.cs" />
@@ -104,6 +108,7 @@
     <Compile Include="Assets\Scene\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scene\Scripts\GuestLoginScript.cs" />
     <Compile Include="Assets\Scene\Scripts\LoginScene.cs" />
+    <Compile Include="Assets\Scene\Scripts\Pause.cs" />
     <Compile Include="Assets\Scene\Scripts\PressurePadScript.cs" />
     <Compile Include="Assets\Scene\Scripts\Question.cs" />
     <Compile Include="Assets\Scene\Scripts\Rotate.cs" />
