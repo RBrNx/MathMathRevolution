@@ -92,10 +92,12 @@
     <Compile Include="Assets\PlayerMovement.cs" />
     <Compile Include="Assets\Scene\Scripts\AnswerQuestion.cs" />
     <Compile Include="Assets\Scene\Scripts\AskQuestion.cs" />
+    <Compile Include="Assets\Scene\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scene\Scripts\ChangeScene.cs" />
     <Compile Include="Assets\Scene\Scripts\CycleCookiesTimer.cs" />
     <Compile Include="Assets\Scene\Scripts\GUI.cs" />
     <Compile Include="Assets\Scene\Scripts\GameOver.cs" />
+    <Compile Include="Assets\Scene\Scripts\Pause.cs" />
     <Compile Include="Assets\Scene\Scripts\PressurePadScript.cs" />
     <Compile Include="Assets\Scene\Scripts\Question.cs" />
     <Compile Include="Assets\Scene\Scripts\Rotate.cs" />

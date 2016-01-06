@@ -38,6 +38,8 @@ public class ChangeScene : MonoBehaviour {
         PlayerPrefs.SetInt("levelSoundIndex", levelSoundIndex);
     }
 
+
+
     public void clickExit()
     {
         Application.Quit();
@@ -46,5 +48,10 @@ public class ChangeScene : MonoBehaviour {
     public void setChosenTopic(string topic)
     {
         PlayerPrefs.SetString("ChosenTopic", topic);
+    }
+
+    public void deletePrefs()
+    {
+        PlayerPrefs.DeleteAll();
     }
 }

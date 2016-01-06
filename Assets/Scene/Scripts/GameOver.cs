@@ -8,6 +8,7 @@ public class GameOver : MonoBehaviour {
     Text guiTimeText;
     Text guiScoreText;
     Text guiAnswersText;
+    Text[] questionArray = new Text[10];
 
     // Use this for initialization
     void Start () {
@@ -36,6 +37,18 @@ public class GameOver : MonoBehaviour {
 
         //displays correct answer of possible questions
         guiAnswersText.text = "Answers: " + PlayerPrefs.GetInt("correctAnswers") + "/" + PlayerPrefs.GetInt("questionsAsked");
+
+        for(int i = 0, pos = 0; i < 10; i++)
+        {
+            if(PlayerPrefs.HasKey("Feedback " + i))
+            {
+                gObj = GameObject.Find("Feedback " + (pos + 1));
+                questionArray[pos] = gObj.GetComponent<Text>();
+
+                questionArray[pos].text = "#" + (i+1) + ": " + PlayerPrefs.GetString("Feedback " + i);
+                pos++;
+            }
+        }
     }
 
     public void deletePrefs()
