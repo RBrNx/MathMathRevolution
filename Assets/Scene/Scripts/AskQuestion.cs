@@ -27,6 +27,9 @@ public class AskQuestion : MonoBehaviour {
     int questionsAsked = 0;
     int padCount = 0;
 
+    public AudioSource wrongBuzzer;
+    public AudioSource correctBuzzer;
+
     // Use this for initialization
     void Start () {
         chosenTopic = PlayerPrefs.GetString("ChosenTopic");
@@ -142,6 +145,7 @@ public class AskQuestion : MonoBehaviour {
                 questionsAsked++;
                 PlayerPrefs.SetInt("questionsAsked", questionsAsked);
                 ChangeQuestion();
+                wrongBuzzer.Play();
             }
             else if (correctAnswers == correctCount && padCount == correctCount)
             {
@@ -151,6 +155,7 @@ public class AskQuestion : MonoBehaviour {
                 PlayerPrefs.SetInt("questionsAsked", questionsAsked);
                 PlayerPrefs.SetInt("correctAnswers", answeredCorrectly);
                 ChangeQuestion();
+                correctBuzzer.Play();
             }
         }
     }
