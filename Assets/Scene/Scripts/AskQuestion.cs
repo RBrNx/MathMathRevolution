@@ -24,7 +24,7 @@ public class AskQuestion : MonoBehaviour {
     int correctAnswers;
 
     int answeredCorrectly;
-    int questionsAsked;
+    int questionsAsked = 0;
     int padCount = 0;
 
     // Use this for initialization

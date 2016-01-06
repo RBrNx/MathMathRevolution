@@ -45,7 +45,7 @@ public class GameOver : MonoBehaviour {
                 gObj = GameObject.Find("Feedback " + (pos + 1));
                 questionArray[pos] = gObj.GetComponent<Text>();
 
-                questionArray[pos].text = "#" + i + ": " + PlayerPrefs.GetString("Feedback " + i);
+                questionArray[pos].text = "#" + (i+1) + ": " + PlayerPrefs.GetString("Feedback " + i);
                 pos++;
             }
         }
