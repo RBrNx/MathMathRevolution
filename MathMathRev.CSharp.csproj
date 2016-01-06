@@ -51,11 +51,17 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
@@ -90,7 +96,6 @@
     <Compile Include="Assets\KinectScripts\Samples\SetSceneAvatars.cs" />
     <Compile Include="Assets\KinectScripts\Samples\SimpleGestureListener.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
-    <Compile Include="Assets\Scene\Scripts\AnswerQuestion.cs" />
     <Compile Include="Assets\Scene\Scripts\AskQuestion.cs" />
     <Compile Include="Assets\Scene\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scene\Scripts\ChangeScene.cs" />
@@ -101,7 +106,6 @@
     <Compile Include="Assets\Scene\Scripts\PressurePadScript.cs" />
     <Compile Include="Assets\Scene\Scripts\Question.cs" />
     <Compile Include="Assets\Scene\Scripts\Rotate.cs" />
-    <Compile Include="Assets\Scene\Scripts\TextMeshWrap.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scene\Scripts\sampleQuestions.xml" />
