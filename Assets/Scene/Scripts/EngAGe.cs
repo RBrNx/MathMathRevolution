@@ -7,6 +7,7 @@ using System.IO;
 using System.Text;
 using SimpleJSON;
 using System;
+using UnityEngine.SceneManagement;
 
 public class EngAGe : MonoBehaviour {
 	
@@ -129,8 +130,8 @@ public class EngAGe : MonoBehaviour {
 		{
 			errorCode = 201;
 			error = "Login failed";
-			Application.LoadLevel(sceneLoginFail);
-		}
+            SceneManager.LoadScene(sceneLoginFail);
+        }
 		else if (loginData["version"] != null)
 		{
 			errorCode = 0;
@@ -143,23 +144,23 @@ public class EngAGe : MonoBehaviour {
 				parameters = loginData["params"].AsArray;
 
 				LoginButton.loggedIn = true;
-				Application.LoadLevel(sceneNoParameters);
-			}
+                SceneManager.LoadScene(sceneNoParameters);
+            }
 			else
 			{
 				version = loginData["version"].AsInt;
 				idStudent = loginData["student"]["id"].AsInt;
 				parameters = loginData["params"].AsArray;
-				
-				Application.LoadLevel(sceneParameters);
-			}
+
+                SceneManager.LoadScene(sceneParameters);
+            }
 		}
 		else
 		{
 			errorCode = 203;
 			error = "Sorry, this game is not public and you don't have access to it.";
-			Application.LoadLevel(sceneLoginFail);
-		}
+            SceneManager.LoadScene(sceneLoginFail);
+        }
 	}
 
 	public IEnumerator guestLogin(int p_idSG, string sceneLoginFail, string sceneParameters)
@@ -193,14 +194,14 @@ public class EngAGe : MonoBehaviour {
 			parameters = loginData["params"].AsArray;
 			version = loginData["version"].AsInt;
 			LoginButton.loggedIn = true;
-			Application.LoadLevel(sceneParameters);
-		}
+            SceneManager.LoadScene(sceneParameters);
+        }
 		else
 		{
 			errorCode = 202;
 			error = "Sorry this game is not public";
-			Application.LoadLevel(sceneLoginFail);
-		}				
+            SceneManager.LoadScene(sceneLoginFail);
+        }				
 	}
 
 	public IEnumerator startGameplay(int p_idSG, string sceneGame)
@@ -258,9 +259,9 @@ public class EngAGe : MonoBehaviour {
 
 		scores = JSON.Parse(www2.text).AsArray;
 		print ("Scores received! " + scores.ToString());
-		
-		Application.LoadLevel(sceneGame);
-	}
+
+        SceneManager.LoadScene(sceneGame);
+    }
 
 	public IEnumerator assess(string p_action, JSONNode p_values, Action<JSONNode> callback)
 	{

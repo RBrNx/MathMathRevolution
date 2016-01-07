@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using SimpleJSON;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class AskQuestion : MonoBehaviour {
 
@@ -86,7 +87,7 @@ public class AskQuestion : MonoBehaviour {
             }
             if (timer <= 0)
             {
-                Application.LoadLevel(3);
+                SceneManager.LoadScene(3);
             }
         }
     }
