@@ -79,6 +79,7 @@ public class AskQuestion : MonoBehaviour {
                 timer -= Time.deltaTime;
                 CheckQuestions();
                 CheckAnswers();
+								GetComponent<Assessment>().EndGame(PlayerPrefs.GetInt("score"));
             }
             else
             {

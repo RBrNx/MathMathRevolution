@@ -30,7 +30,7 @@ public class Badge
 
 	public void LoginStudent(string username, string password, string failScene, string initialQuestionaireScene, string successScene)
 	{
-		StartCoroutine(EngAGe.E.loginStudent(EngAGe.idSG, username, password, failScene, initialQuestionaireScene, successScene));
+		StartCoroutine(EngAGe.E.loginStudent(EngAGe.idSG, username, password, failScene, successScene, initialQuestionaireScene));
 	}
 
 	public void StartGame(string scene)
@@ -212,9 +212,22 @@ public class Badge
 	{
 		if (LoginButton.loggedIn)
 		{
-			JSONNode vals = JSON.Parse("{\"correct\" : " + correct/*(correct ? "true" : "false")*/ + "}");
-			//vals["correct"].AsBool = correct;
-			StartCoroutine(EngAGe.E.assess("answer", vals, action));
+			JSONNode vals = JSON.Parse("{\"thing\" : \"\"}");
+			StartCoroutine(EngAGe.E.assess(correct?"answerCorrectly":"answerIncorrectly", vals, action));
+		}
+	}
+
+	public void EndGame(int score)
+	{
+		if(LoginButton.loggedIn)
+		{
+			foreach(JSONNode node in EngAGe.E.getScores())
+			{
+				if(node["name"] == "score")
+				{
+					node["name"].AsInt = score;
+				}
+			}
 		}
 	}
 }
