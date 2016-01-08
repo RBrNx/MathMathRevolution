@@ -490,14 +490,14 @@
       <IncorrectAnswer value="100"/>
     </Question>
 
-    <Question value="A rectangle has sides of length 2 and 5. What will the lengths be after applying an ENLARGEMENT factor of 2">
+    <Question value="Apply an ENLARGEMENT factor of 2 to sides of 2 and 5">
       <IncorrectAnswer value="6"/>
       <CorrectAnswer value="4"/>
       <IncorrectAnswer value="15"/>
       <CorrectAnswer value="10"/>
     </Question>
 
-    <Question value="A rectangle has sides of length 6 and 9. What will the lengths be after applying a REDUCTION factor of 3">
+    <Question value="Apply an ENLARGEMENT factor of 3 to sides of 6 and 9">
       <IncorrectAnswer value="1"/>
       <CorrectAnswer value="2"/>
       <IncorrectAnswer value="12"/>
@@ -569,14 +569,14 @@
       <IncorrectAnswer value="35"/>
     </Question>
 
-    <Question value="A rectangle has sides of length 2 and 4. What will the lengths be after applying an ENLARGEMENT factor of 3/2">
+    <Question value="Apply an ENLARGEMENT factor of 3/2 to sides of 2 and 4">
       <IncorrectAnswer value="2"/>
       <CorrectAnswer value="3"/>
       <IncorrectAnswer value="5"/>
       <CorrectAnswer value="6"/>
     </Question>
 
-    <Question value="A rectangle has sides of length 60 and 96. What will the lengths be after applying a REDUCTION factor of 3">
+    <Question value="Apply a REDUCTION factor of 3 to sides of 60 and 96">
       <IncorrectAnswer value="30"/>
       <CorrectAnswer value="20"/>
       <IncorrectAnswer value="15"/>
@@ -648,14 +648,14 @@
       <IncorrectAnswer value="40"/>
     </Question>
 
-    <Question value="A rectangle has sides of length 2.5 and 4.2. What will the lengths be after applying an ENLARGEMENT factor of 3">
+    <Question value="Apply an ENLARGEMENT factor of 3 to sides of 2.5 and 4.2">
       <IncorrectAnswer value="8.6"/>
       <CorrectAnswer value="7.5"/>
       <IncorrectAnswer value="10.2"/>
       <CorrectAnswer value="12.6"/>
     </Question>
 
-    <Question value="A rectangle has sides of length 10 and 20. What will the lengths be after applying a REDUCTION factor of 4">
+    <Question value="Apply an REDUCTION factor of 4 to sides of 10 and 20">
       <IncorrectAnswer value="3"/>
       <CorrectAnswer value="2.5"/>
       <IncorrectAnswer value="4"/>

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/MathMathRevolution.unity
+- path: Assets/Scene/LevelSelect.unity
   isLoaded: 1
   isActive: 1
