@@ -3,10 +3,10 @@
 <Topics>
   <Topic name="1.1">
 	  <Question value="Horizontal Lines have a Gradient of _ ?">
-		  <IncorrectAnswer value="1"/>
-      <CorrectAnswer value="0"/>
-		  <IncorrectAnswer value="2"/>
-      <IncorrectAnswer value="10"/>
+		<IncorrectAnswer value="1"/>
+		<CorrectAnswer value="0"/>
+		<IncorrectAnswer value="2"/>
+		<IncorrectAnswer value="10"/>
 	  </Question>
 
     <Question value="Vertical Lines have a Gradient of _ ?">
@@ -137,11 +137,11 @@
       <IncorrectAnswer value="x &gt; 3"/>
     </Question>
 
-    <Question value="Change the Subject of the Formula to C: mx + c = y">
-      <IncorrectAnswer value="y - c = mx"/>
-      <CorrectAnswer value="c = y - mx"/>
-      <IncorrectAnswer value="c = y + mx"/>
-      <IncorrectAnswer value="c - mx = y"/>
+    <Question value="Change the Subject of the Formula to C: mx + 2c = y">
+      <IncorrectAnswer value="y - 2c = mx"/>
+      <CorrectAnswer value="c = (y - mx)/2"/>
+      <IncorrectAnswer value="c = (y + mx)/2"/>
+      <IncorrectAnswer value="2c - mx = y"/>
     </Question>
 
     <Question value="Change the Subject of the Formula to t: d = 6 + 4t - 7">
@@ -158,4 +158,558 @@
       <IncorrectAnswer value=" "/>
     </Question>
   </Topic>
+  
+  <Topic name="1.3">
+    <Question value="A line at 45 deg has a gradient of 5. A line at 90 deg has a gradient of _?">
+      <IncorrectAnswer value="2"/>
+      <CorrectAnswer value="0"/>
+      <IncorrectAnswer value="1"/>
+      <IncorrectAnswer value="n/a"/>
+    </Question>
+
+    <Question value="Two lines at 135 deg, one has a gradient of 3. What is the gradient of the other?">
+      <IncorrectAnswer value="1"/>
+      <CorrectAnswer value="3"/>
+      <IncorrectAnswer value="n/a"/>
+      <IncorrectAnswer value="0"/>
+    </Question>
+
+    <Question value="y = 5 + 5x + 2x + 7 + 6 + 2x, what is the Gradient? What is the Y-Intercept?">
+      <IncorrectAnswer value="6"/>
+      <CorrectAnswer value="9"/>
+      <IncorrectAnswer value="5"/>
+      <CorrectAnswer value="18"/>
+    </Question>
+
+    <Question value="3 + 2x + 5 + 4x + 0x + 16 = y, what is the Gradient? What is the Y-Intercept?">
+      <IncorrectAnswer value="25"/>
+      <CorrectAnswer value="6"/>
+      <IncorrectAnswer value="4"/>
+      <CorrectAnswer value="24"/>
+    </Question>
+
+    <Question value="(3x)*3 + (3)^2 = 36. Find x.">
+      <IncorrectAnswer value="9"/>
+      <CorrectAnswer value="3"/>
+      <IncorrectAnswer value="8"/>
+      <IncorrectAnswer value="7"/>
+    </Question>
+
+    <Question value="3x + (4)^2 + (2x)*4 = 49. Find x.">
+      <IncorrectAnswer value="5"/>
+      <CorrectAnswer value="3"/>
+      <IncorrectAnswer value="12"/>
+      <IncorrectAnswer value="4"/>
+    </Question>
+
+    <Question value="(3x)*2 - (6)^2 &lt; 12. Find x.">
+      <IncorrectAnswer value="x &lt; 9"/>
+      <CorrectAnswer value="x &lt; 8"/>
+      <IncorrectAnswer value="x &lt; 7"/>
+      <IncorrectAnswer value="x &gt; 5"/>
+    </Question>
+
+    <Question value="(8x)*3 + (2)^3 + 2x &gt; 34. Find x.">
+      <IncorrectAnswer value="x &lt; 1"/>
+      <CorrectAnswer value="x &gt; 1"/>
+      <IncorrectAnswer value="x &gt; 2"/>
+      <IncorrectAnswer value="x &gt; 3"/>
+    </Question>
+
+    <Question value="Change the Subject of the Formula to y: mx = 2c + 4y">
+      <IncorrectAnswer value="4y = mx + 2c"/>
+      <CorrectAnswer value="(mx - 2c)/4 = y"/>
+      <IncorrectAnswer value="c = (y + mx)/4"/>
+      <IncorrectAnswer value="y = mx + 2c"/>
+    </Question>
+
+    <Question value="Change the Subject of the Formula to t: 2d = 6 + (4t)*2 - 7">
+      <IncorrectAnswer value="8t = (2d + 7)"/>
+      <CorrectAnswer value="t = (2d + 1)/8"/>
+      <IncorrectAnswer value="2d = 8t - 7"/>
+      <IncorrectAnswer value="t = (2d)/8 + 1"/>
+    </Question>
+
+    <Question value="Level Complete!">
+      <IncorrectAnswer value=" "/>
+      <CorrectAnswer value=" "/>
+      <IncorrectAnswer value=" "/>
+      <IncorrectAnswer value=" "/>
+    </Question>
+  </Topic>
+  
+  <Topic name="2.1">
+    <Question value="In a right angled triangle, the side opposite the right angle is called the _?">
+      <IncorrectAnswer value="Hypotenuse"/>
+      <CorrectAnswer value="Opposite"/>
+      <IncorrectAnswer value="Adjacent"/>
+      <IncorrectAnswer value="Tangent"/>
+    </Question>
+
+    <Question value="sin(x) = ?">
+      <CorrectAnswer value="O / H"/>
+      <IncorrectAnswer value="A / H"/>
+      <IncorrectAnswer value="O / A"/>
+      <IncorrectAnswer value="H / O"/>
+    </Question>
+
+    <Question value="cos(x) = ? tan(x) = ?">
+      <IncorrectAnswer value="O / H"/>
+      <CorrectAnswer value="A / H"/>
+      <CorrectAnswer value="O / A"/>
+      <IncorrectAnswer value="H / A"/>
+    </Question>
+
+    <Question value="O = 8, H = 10, A = 7. sin(x) = ?">
+      <CorrectAnswer value="0.8"/>
+      <IncorrectAnswer value="0.7"/>
+      <IncorrectAnswer value="1.25"/>
+      <IncorrectAnswer value="0.6"/>
+    </Question>
+
+    <Question value="O = 6, H = 12, A = 4. cos(x) = ?">
+      <IncorrectAnswer value="3"/>
+      <CorrectAnswer value="0.33"/>
+      <IncorrectAnswer value="0.5"/>
+      <IncorrectAnswer value="2"/>
+    </Question>
+
+    <Question value="O = 8, H = 12, A = 4. tan(x) = ?">
+      <IncorrectAnswer value="3"/>
+      <CorrectAnswer value="2"/>
+      <IncorrectAnswer value="0.5"/>
+      <IncorrectAnswer value="0.75"/>
+    </Question>
+
+    <Question value="O = 3, H = 6, A = 4. sin(x) = ?">
+      <CorrectAnswer value="0.5"/>
+      <IncorrectAnswer value="2"/>
+      <IncorrectAnswer value="1.5"/>
+      <IncorrectAnswer value="0.75"/>
+    </Question>
+
+    <Question value="O = 5, H = 12, A = 3. cos(x) = ?">
+      <IncorrectAnswer value="4"/>
+      <CorrectAnswer value="0.25"/>
+      <IncorrectAnswer value="0.5"/>
+      <IncorrectAnswer value="2"/>
+    </Question>
+
+    <Question value="O = 12, H = 20, A = 18. tan(x) = ?">
+      <IncorrectAnswer value="3"/>
+      <CorrectAnswer value="0.66"/>
+      <IncorrectAnswer value="0.5"/>
+      <IncorrectAnswer value="0.75"/>
+    </Question>
+
+    <Question value="What is the Trig Mnemonic">
+      <IncorrectAnswer value="SAH COH TOA"/>
+      <CorrectAnswer value="SOH CAH TOA"/>
+      <IncorrectAnswer value="TAH COH SOA"/>
+      <IncorrectAnswer value="TOH COA SAH"/>
+    </Question>
+
+    <Question value="Level Complete!">
+      <IncorrectAnswer value=" "/>
+      <CorrectAnswer value=" "/>
+      <IncorrectAnswer value=" "/>
+      <IncorrectAnswer value=" "/>
+    </Question>
+  </Topic>
+  
+  <Topic name="2.2">
+    <Question value="What is Sin(30)?">
+      <IncorrectAnswer value="1"/>
+      <CorrectAnswer value="0.5"/>
+      <IncorrectAnswer value="2"/>
+      <IncorrectAnswer value="3"/>
+    </Question>
+
+    <Question value="What is Cos(90)?">
+      <CorrectAnswer value="0"/>
+      <IncorrectAnswer value="1"/>
+      <IncorrectAnswer value="0.5"/>
+      <IncorrectAnswer value="-1"/>
+    </Question>
+
+    <Question value="What is Tan(0)">
+      <IncorrectAnswer value="0"/>
+      <CorrectAnswer value="1"/>
+      <IncorrectAnswer value="-1"/>
+      <IncorrectAnswer value="0.5"/>
+    </Question>
+
+    <Question value="What is Sin(90)">
+      <CorrectAnswer value="1"/>
+      <IncorrectAnswer value="0"/>
+      <IncorrectAnswer value="0.5"/>
+      <IncorrectAnswer value="-1"/>
+    </Question>
+
+    <Question value="What is Cos(60)">
+      <IncorrectAnswer value="1"/>
+      <CorrectAnswer value="0.5"/>
+      <IncorrectAnswer value="0"/>
+      <IncorrectAnswer value="-1"/>
+    </Question>
+
+    <Question value="What is Tan(45)?">
+      <IncorrectAnswer value="1"/>
+      <CorrectAnswer value="0"/>
+      <IncorrectAnswer value="0.5"/>
+      <IncorrectAnswer value="-1"/>
+    </Question>
+
+    <Question value="What is Sin(270)">
+      <CorrectAnswer value="-1"/>
+      <IncorrectAnswer value="0"/>
+      <IncorrectAnswer value="0.5"/>
+      <IncorrectAnswer value="1"/>
+    </Question>
+
+    <Question value="What is Cos(180)">
+      <IncorrectAnswer value="1"/>
+      <CorrectAnswer value="-1"/>
+      <IncorrectAnswer value="0"/>
+      <IncorrectAnswer value="0.5"/>
+    </Question>
+
+    <Question value="What is Tan(180)?">
+      <IncorrectAnswer value="1"/>
+      <CorrectAnswer value="0"/>
+      <IncorrectAnswer value="0.5"/>
+      <IncorrectAnswer value="-1"/>
+    </Question>
+
+    <Question value="What is Sin(0)?">
+      <IncorrectAnswer value="-1"/>
+      <CorrectAnswer value="0"/>
+      <IncorrectAnswer value="1"/>
+      <IncorrectAnswer value="0.5"/>
+    </Question>
+
+    <Question value="Level Complete!">
+      <IncorrectAnswer value=" "/>
+      <CorrectAnswer value=" "/>
+      <IncorrectAnswer value=" "/>
+      <IncorrectAnswer value=" "/>
+    </Question>
+  </Topic>
+  
+  <Topic name="2.3">
+    <Question value="x = 0.5, O = 3, A = 5, H = 6. What ratio was used?">
+      <IncorrectAnswer value="TAH"/>
+      <CorrectAnswer value="SOH"/>
+      <IncorrectAnswer value="TOA"/>
+      <IncorrectAnswer value="CAH"/>
+    </Question>
+
+    <Question value="x = 0.66, O = 4, A = 6, H = 9. What ratio was used?">
+      <CorrectAnswer value="CAH"/>
+      <IncorrectAnswer value="TAH"/>
+      <IncorrectAnswer value="SOH"/>
+      <IncorrectAnswer value="TOA"/>
+    </Question>
+
+    <Question value="x = 2, O = 10, A = 5, H = 15. What ratio was used?">
+      <IncorrectAnswer value="CAH"/>
+      <CorrectAnswer value="TOA"/>
+      <IncorrectAnswer value="SOH"/>
+      <IncorrectAnswer value="SAH"/>
+    </Question>
+
+    <Question value="x = 0.5, O = 4, A = 3, H = 8. What ratio was used?">
+      <CorrectAnswer value="SOH"/>
+      <IncorrectAnswer value="CAH"/>
+      <IncorrectAnswer value="TOA"/>
+      <IncorrectAnswer value="COH"/>
+    </Question>
+
+    <Question value="x = 0.3, O = 4, A = 2, H = 6. What ratio was used?">
+      <IncorrectAnswer value="SOH"/>
+      <CorrectAnswer value="CAH"/>
+      <IncorrectAnswer value="TOA"/>
+      <IncorrectAnswer value="TAH"/>
+    </Question>
+
+    <Question value="x = 4, O = 8, A = 2, H = 12. What ratio was used?">
+      <IncorrectAnswer value="CAH"/>
+      <CorrectAnswer value="TOA"/>
+      <IncorrectAnswer value="SOH"/>
+      <IncorrectAnswer value="COA"/>
+    </Question>
+
+       <Question value="What is Tan(135)">
+      <CorrectAnswer value="-1"/>
+      <IncorrectAnswer value="0"/>
+      <IncorrectAnswer value="0.5"/>
+      <IncorrectAnswer value="1"/>
+    </Question>
+
+    <Question value="What is Cos(360)">
+      <IncorrectAnswer value="-1"/>
+      <CorrectAnswer value="1"/>
+      <IncorrectAnswer value="0"/>
+      <IncorrectAnswer value="0.5"/>
+    </Question>
+
+    <Question value="What is Cos(270)?">
+      <IncorrectAnswer value="1"/>
+      <CorrectAnswer value="0"/>
+      <IncorrectAnswer value="0.5"/>
+      <IncorrectAnswer value="-1"/>
+    </Question>
+
+    <Question value="What is Sin(360)?">
+      <IncorrectAnswer value="-1"/>
+      <CorrectAnswer value="0"/>
+      <IncorrectAnswer value="1"/>
+      <IncorrectAnswer value="0.5"/>
+    </Question>
+
+    <Question value="Level Complete!">
+      <IncorrectAnswer value=" "/>
+      <CorrectAnswer value=" "/>
+      <IncorrectAnswer value=" "/>
+      <IncorrectAnswer value=" "/>
+    </Question>
+  </Topic>
+  
+   <Topic name="3.1">
+    <Question value="Two angles of a triangle are 60 and 60, what is the remaining angle?">
+      <IncorrectAnswer value="0"/>
+      <CorrectAnswer value="60"/>
+      <IncorrectAnswer value="180"/>
+      <IncorrectAnswer value="90"/>
+    </Question>
+
+    <Question value="Two angles of a triangle are 100 and 20, what is the remaining angle?">
+      <IncorrectAnswer value="20"/>
+      <CorrectAnswer value="60"/>
+      <IncorrectAnswer value="180"/>
+      <IncorrectAnswer value="100"/>
+    </Question>
+
+    <Question value="A rectangle has sides of length 2 and 5. What will the lengths be after applying an ENLARGEMENT factor of 2">
+      <IncorrectAnswer value="6"/>
+      <CorrectAnswer value="4"/>
+      <IncorrectAnswer value="15"/>
+      <CorrectAnswer value="10"/>
+    </Question>
+
+    <Question value="A rectangle has sides of length 6 and 9. What will the lengths be after applying a REDUCTION factor of 3">
+      <IncorrectAnswer value="1"/>
+      <CorrectAnswer value="2"/>
+      <IncorrectAnswer value="12"/>
+      <CorrectAnswer value="3"/>
+    </Question>
+
+    <Question value="Lengths of two sides of a triangle are 2 each, how long is the hypotenuse?">
+      <IncorrectAnswer value="1"/>
+      <CorrectAnswer value="2"/>
+      <IncorrectAnswer value="3"/>
+      <IncorrectAnswer value="4"/>
+    </Question>
+
+    <Question value="Lengths of two sides of a triangle are 3 &amp; 4 each, how long is the hypotenuse?">
+      <IncorrectAnswer value="10"/>
+      <CorrectAnswer value="5"/>
+      <IncorrectAnswer value="3"/>
+      <IncorrectAnswer value="8"/>
+    </Question>
+
+    <Question value="Lengths of two sides of a triangle are 5 &amp; 5 each, how long is the hypotenuse?">
+      <IncorrectAnswer value="4"/>
+      <CorrectAnswer value="5"/>
+      <IncorrectAnswer value="10"/>
+      <IncorrectAnswer value="2"/>
+    </Question>
+
+    <Question value="An angle is 45 degrees. What would the value of a CORRESPONDING angle be?">
+      <IncorrectAnswer value="90"/>
+      <CorrectAnswer value="45"/>
+      <IncorrectAnswer value="0"/>
+      <IncorrectAnswer value="180"/>
+    </Question>
+
+    <Question value="An angle is 90 degrees. What would the value of an ALTERNATE angle be?">
+      <IncorrectAnswer value="45"/>
+      <CorrectAnswer value="90"/>
+      <IncorrectAnswer value="0"/>
+      <IncorrectAnswer value="180"/>
+    </Question>
+
+    <Question value="An angle is 180 degrees. What would the value of a OPPOSITE angle be?">
+      <IncorrectAnswer value="90"/>
+      <CorrectAnswer value="180"/>
+      <IncorrectAnswer value="0"/>
+      <IncorrectAnswer value="45"/>
+    </Question>
+
+    <Question value="Level Complete!">
+      <IncorrectAnswer value=" "/>
+      <CorrectAnswer value=" "/>
+      <IncorrectAnswer value=" "/>
+      <IncorrectAnswer value=" "/>
+    </Question>
+  </Topic>
+
+  <Topic name="3.2">
+    <Question value="Two angles of a triangle are 25 and 105, what is the remaining angle?">
+      <IncorrectAnswer value="0"/>
+      <CorrectAnswer value="60"/>
+      <IncorrectAnswer value="180"/>
+      <IncorrectAnswer value="75"/>
+    </Question>
+
+    <Question value="Two angles of a triangle are 78 and 83, what is the remaining angle?">
+      <IncorrectAnswer value="28"/>
+      <CorrectAnswer value="19"/>
+      <IncorrectAnswer value="11"/>
+      <IncorrectAnswer value="35"/>
+    </Question>
+
+    <Question value="A rectangle has sides of length 2 and 4. What will the lengths be after applying an ENLARGEMENT factor of 3/2">
+      <IncorrectAnswer value="2"/>
+      <CorrectAnswer value="3"/>
+      <IncorrectAnswer value="5"/>
+      <CorrectAnswer value="6"/>
+    </Question>
+
+    <Question value="A rectangle has sides of length 60 and 96. What will the lengths be after applying a REDUCTION factor of 3">
+      <IncorrectAnswer value="30"/>
+      <CorrectAnswer value="20"/>
+      <IncorrectAnswer value="15"/>
+      <CorrectAnswer value="32"/>
+    </Question>
+
+    <Question value="Lengths of two sides of a triangle are 10 each, how long is the hypotenuse?">
+      <IncorrectAnswer value="11"/>
+      <CorrectAnswer value="10"/>
+      <IncorrectAnswer value="5"/>
+      <IncorrectAnswer value="15"/>
+    </Question>
+
+    <Question value="Hypotenuse is 5 and a side is 5, how long is the other side?">
+      <IncorrectAnswer value="10"/>
+      <CorrectAnswer value="5"/>
+      <IncorrectAnswer value="3"/>
+      <IncorrectAnswer value="8"/>
+    </Question>
+
+    <Question value="Hypotenuse is 5 and a side is 3, how long is the other side?">
+      <IncorrectAnswer value="5"/>
+      <CorrectAnswer value="4"/>
+      <IncorrectAnswer value="12"/>
+      <IncorrectAnswer value="10"/>
+    </Question>
+
+    <Question value="A shape has 4 sides of equal length and four right angle corners. What shape is it?">
+      <IncorrectAnswer value="Square"/>
+      <CorrectAnswer value="Rhombus"/>
+      <IncorrectAnswer value="Kite"/>
+      <IncorrectAnswer value="Triangle"/>
+    </Question>
+
+    <Question value="How many angles in an equilateral triangle are equal">
+      <IncorrectAnswer value="0"/>
+      <CorrectAnswer value="2"/>
+      <IncorrectAnswer value="3"/>
+      <IncorrectAnswer value="4"/>
+    </Question>
+
+    <Question value="How many angles in an isosceles triangle are equal">
+      <IncorrectAnswer value="0"/>
+      <CorrectAnswer value="2"/>
+      <IncorrectAnswer value="3"/>
+      <IncorrectAnswer value="4"/>
+    </Question>
+
+    <Question value="Level Complete!">
+      <IncorrectAnswer value=" "/>
+      <CorrectAnswer value=" "/>
+      <IncorrectAnswer value=" "/>
+      <IncorrectAnswer value=" "/>
+    </Question>
+  </Topic>
+
+  <Topic name="3.3">
+    <Question value="Two angles of a triangle are 60.5 and 29.5, what is the remaining angle?">
+      <IncorrectAnswer value="0"/>
+      <CorrectAnswer value="90"/>
+      <IncorrectAnswer value="180"/>
+      <IncorrectAnswer value="75"/>
+    </Question>
+
+    <Question value="Two angles of a triangle are 100.8 and 33.1, what is the remaining angle?">
+      <IncorrectAnswer value="35.8"/>
+      <CorrectAnswer value="42.1"/>
+      <IncorrectAnswer value="52.9"/>
+      <IncorrectAnswer value="40"/>
+    </Question>
+
+    <Question value="A rectangle has sides of length 2.5 and 4.2. What will the lengths be after applying an ENLARGEMENT factor of 3">
+      <IncorrectAnswer value="8.6"/>
+      <CorrectAnswer value="7.5"/>
+      <IncorrectAnswer value="10.2"/>
+      <CorrectAnswer value="12.6"/>
+    </Question>
+
+    <Question value="A rectangle has sides of length 10 and 20. What will the lengths be after applying a REDUCTION factor of 4">
+      <IncorrectAnswer value="3"/>
+      <CorrectAnswer value="2.5"/>
+      <IncorrectAnswer value="4"/>
+      <CorrectAnswer value="5"/>
+    </Question>
+
+    <Question value="Lengths of two sides of a triangle are 5.5 each, how long is the hypotenuse?">
+      <IncorrectAnswer value="10.7"/>
+      <CorrectAnswer value="5.5"/>
+      <IncorrectAnswer value="3.6"/>
+      <IncorrectAnswer value="10"/>
+    </Question>
+
+    <Question value="Hypotenuse is 10 and a side is 10, how long is the other side?">
+      <IncorrectAnswer value="8"/>
+      <CorrectAnswer value="10"/>
+      <IncorrectAnswer value="3"/>
+      <IncorrectAnswer value="7"/>
+    </Question>
+
+    <Question value="Hypotenuse is 102.5 and a side is 102.5, how long is the other side?">
+      <IncorrectAnswer value="105.2"/>
+      <CorrectAnswer value="102.5"/>
+      <IncorrectAnswer value="100.25"/>
+      <IncorrectAnswer value="50"/>
+    </Question>
+
+    <Question value="3 angles in a quadrilateral are 100, 20 and 130, what is the other?">
+      <IncorrectAnswer value="150"/>
+      <CorrectAnswer value="110"/>
+      <IncorrectAnswer value="210"/>
+      <IncorrectAnswer value="250"/>
+    </Question>
+
+    <Question value="How many angles in an rectangle are equal">
+      <IncorrectAnswer value="0"/>
+      <CorrectAnswer value="2"/>
+      <IncorrectAnswer value="4"/>
+      <IncorrectAnswer value="Can't say"/>
+    </Question>
+
+    <Question value="A triangle is formed in a semicircle. One of the angles is 30, what are the others?">
+      <IncorrectAnswer value="30"/>
+      <CorrectAnswer value="90"/>
+      <IncorrectAnswer value="120"/>
+      <CorrectAnswer value="90"/>
+    </Question>
+
+    <Question value="Level Complete!">
+      <IncorrectAnswer value=" "/>
+      <CorrectAnswer value=" "/>
+      <IncorrectAnswer value=" "/>
+      <IncorrectAnswer value=" "/>
+    </Question>
+  </Topic>
+  
 </Topics>
