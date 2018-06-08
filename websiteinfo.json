@@ -1,6 +1,7 @@
 {
   "show": true,
-  "image": "img/mathmath.png",
+  "imageMain": "img/mathmath.png",
+  "imageDrop": "img/mathmath.png",
   "title": "Math Math Revolution",
   "description": "A DDR inspired learning game for the Kinect"
 }
