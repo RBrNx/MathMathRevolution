@@ -3,5 +3,11 @@
   "imageMain": "img/mathmathrev.png",
   "imageDrop": "img/mathmathrev_2.png",
   "title": "Math Math Revolution",
-  "description": "A DDR inspired learning game for the Kinect"
+  "description": "A Dance Dance Revolution inspired learning game for the Kinect",
+  "carouselImages": [ "mathmathrev.png", "mathmathrev_2.png" ],
+  "aboutProject": "<p><strong>Math Math Revolution</strong> is an educational game developed by myself and some other students in a group project during my 3rd year at University. The game makes use of the Microsoft Kinect to allow fun gameplay elements that will enable players to learn a subject without getting bored.</p><p>The game was inspired by <strong>Dance Dance Revolution</strong>, however instead of following dance moves the player must answer a series of questions with each arrow on the dance mat corresponding to an answer. The subject that the game helps to teach is National 4 Mathematics, specifically the subtopics of <strong>Algebra</strong>, <strong>Trigonometry</strong> and <strong>Geometry</strong>.</p>",
+  "techSheet": [ "UI/UX Design", "Unity 5", "C#", "Microsoft Kinect" ],
+  "links": [ 
+    { "linkText": "Math Math Revolution (Github)", "link": "https://github.com/RBrNx/MathMathRevolution" }
+  ]
 }
