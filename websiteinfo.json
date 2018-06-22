@@ -1,7 +1,7 @@
 {
   "show": true,
-  "imageMain": "img/mathmathrev.png",
-  "imageDrop": "img/mathmathrev_2.png",
+  "imageMain": "/img/mathmathrev.png",
+  "imageDrop": "/img/mathmathrev_2.png",
   "title": "Math Math Revolution",
   "description": "A Dance Dance Revolution inspired learning game for the Kinect",
   "carouselImages": [ "mathmathrev.png", "mathmathrev_2.png" ],
